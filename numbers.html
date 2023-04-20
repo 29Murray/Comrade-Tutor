@@ -1,0 +1,254 @@
+<html>
+    <head>
+        <title>Computer Number Systems</title>
+    </head>
+    <body>
+        <a href="comrade1.html">Home</a><br>
+        <h1>Computer Number Systems.</h1>
+         <h2>Introduction to Number Systems.</h2>
+<p>If you are reading this article means either 
+<ol>
+<li>You are pursuing a course related to computer studies</li>
+<li>Umepatana na hii unit ya computer na labda unafanya forestry and now you are left thinking zinarelate aje</li>
+</ol>
+</p>
+
+<p>Don’t worry with Comrade Tutor you are sure to understand computer number systems easily regardless of the course you are taking. </p>
+<p>To understand computer number systems we first of all have to know that computers are used in problem solving which is from basic arithmetic to complex scientific mazematics through data processing</p>
+
+<p>But now the problem is how do we instruct the computer on how to carry out our problems.Na si aty unaeza iongelesha. To do so we need to convert our problems into a way the comp can understand so it can solve them for us kapish?</p>
+
+<p>Computers only understand bits which are basically 1’s and 0’s. So to solve our problems the computer converts them into  1’s and 0’s. Tuchukue a basic arithmetic problem like adding 3+4 your computer will convert this into binary bits 011+100 which gives us 111 which is the bit representation of 7. We will get to how 011 plus 100 gives us 111 so usiworry, 
+I promised to make things easier so nipee tu time.</p>
+
+<p>From the above example we can deduce that computer number systems are used in representation of numbers therefore enabling data processing. Apart from that they are also used in Memory for allocating addresses to different storage units.Say this in the next group meeting ushtue watu kiac.
+Now that you have known computer number systems are used to represent numbers the next thing you need to know to is how to convert number systems to binary and also to other number systems.</p>
+
+<p>Basically computer number systems come in four different flavors
+<ol>
+<li>Decimal of flavor 10(base 10)</li>
+<li>Binary of flavor 2(base 2)</li>
+<li>Octal of flavor 8(base 8)</li>
+<li>Hexadecimal of flavour 16(base 16)</li>
+</ol>
+</p>
+ 
+<p>Side Chat: We will only be using the flavor concept to help us remember the bases of the different number systems. 
+Therefore don’t go writing 45 of flavor 10 in your exam papers utafail ushangae rather remembering that decimals is of flavor 10 helps you remember its base and write 45 base 10 or simply 4510.
+This concept will save your life because in computer mathematics the crime of forgetting the base is punishable by death</p>
+
+<p>Let me give you a heads up all we will be doing is
+<ol>
+<li>Converting other flavors to binary and vice verse</li>
+<li>Converting decimal to other flavors and vice verse </li>
+<li>Flavour arithmetic</li>
+<li>Na of course not forgetting the main agenda which is flavoring hio score sheet with an A from this unit.</li>
+</ol> 
+</p>
+
+<p>So grab that pen,sit nicely and get ready to do some computer arithmetic </p>
+
+<h3>Decimal (flavour 10)</h3>
+<p>Izi ni zile tmezoea that is from 0 to infinity which are basically a combination of the numerals 0,1,2,3,4,5,6,7,8,9. To prove it think of a number that doesn't have any of the numerals listed.
+Is there? Don’t think so. And these are the numbers we basically use in mazematics
+But we said earlier that computers zinaunderstand 1’s and 0’s only. So we’ll have to convert our decimal flavor to binary bits(binary flavor) if at all tnataka computer itufanyie those pesky arithmetic for us 
+There are three ways to do it and I’ll be kind enough kukuonyesha each and also make sure you understand them in the simplest way possible.</p>
+
+<h3>Converting from Decimal(flavour10) to Binary(flavour2)</h3>
+<h4>Method 1.Divide continuously by 2</h4>
+<p>Vitu znaenda kukuwa weird but stick with me nkuonyeshe how we do the conversion in method 1. Here we divide the Decimal number continuously by 2 till we get a zero divisor. 
+7 divided by 2 is 3 remainder 1 right. In this example 3 ndio tnaita divisor sasa. So we are dividing till the divisor is zero and not the remainder.Weird right!!.
+Another weird thing is that whenever we divide and get a remainder we replace the remainder with a 1 and if 0 we leave the zero.Weka these weird scenarios in mind we will use them uko mbele. And with that sasa tko set, si tuanze hii kitu</p> 
+
+<h4>Example :Convert 45<sub>10</sub> (read as 45 base10 or as we like to call it flavor10)to binary </h4>
+
+<p>Take your decimal number, ni 45<sub>10</sub> apo juu sindio, then do your normal division by 2 giving us 22 rem 1.Now take the divisor and continue dividing.The only time utaacha kudivide is if the  divisor is zero</p>
+<img src="div1.PNG" height="290px" alt="division">
+<p>Don’t worry I also got bored dividing but because I promised to make things easier than easy kuja ka comrade tutor nikona shortcut ntakuonyesha.
+Instead of doing each division lemme show you a way you can create a table where we will use upward division to perfom the conversion in an easy and fast way. 
+Aty upward division?? Usijali ndio maana inaitwa shortcut and here is how we go about it </p>
+<img src="table.PNG" height="290px" alt="table">
+<p>Notice how we don’t need to do the previous long cumbersome divisions. With the table above am sure ukiangalia number you can easily tell whether itakupatia remainder or not when divided by 2. Our work now becomes easy where we place 1 where there is a remainder and zero where there is none.
+    Now repeat the process mbaka divisor ikue zero and the divisor only becomes a zero when the number being divided is a  1,because 1 divided by 2 is 0 remainder 1.Then just read the bits(1’and 0’s) upwardly to get the binary equivalent of your decimal number donge!
+    
+    <h4>Limits </h4>
+    Cumbersome when converting large decimal numbers eg 456710 .How many times will you divide by 2
+    Time consuming</p>
+    <h4>Method 2. 8421 method</h4>
+    <p> This might be the simplest way of converting decimal flavor to binary but can only convert numbers up to 1510 
+        <h4> Example :Convert a)5<sub>10</sub>  b)15<sub>10</sub>  to binary</h4>
+        Here we add the values that will give us the decimal value from the numbers 8,4,2 and 1 then fill the table with 1’s under the numbers that will sum up to our decimal value and the rest with zeros</p>
+        <img src="example1.PNG" height="120px"  alt="example1"><br><br>
+        <img src="example2.PNG" height="120px" alt="example2">
+       <h4> Limits </h4>
+            <p>Can only be used in converting decimal numbers from 0-15</p>
+            
+           <h3> Method 3.Table method</h3>
+            <p>In this method utatafta the next higher power of 2 from our decimal number.Kenye namaanisha ni if our number is 12510 the next higher power of 2 is 27=12810  because 26 would give us 6410 which is smaller than 12510
+            Then write all the numbers in descending order that is from our higher number of 27 to 20 horizontally 
+            Next take the higher number and subtract it from the decimal number to be converted.</p>
+            <p>But before we continue just a quick question.
+                Kuna difference between these two statements?</p> 
+                <ol>
+            <li>Subtract 3 from 5 </li>
+             <li>Subtract 5 from 3</li>
+              </ol>
+            <p>Well definitely Yes,ama ulikuwa umesema No.
+                The first statement itatupatia 2 but the second -2.</p>
+            
+            <p>So I hope you understand when I say take the higher number and subtract it from the number to be converted right?</p>
+            
+            <p>But that’s not all to convert to binary we need to subtract the number till we get a zero and the following laws will help you achieve that </p>
+            <ol>
+            <li>If you encounter a negative result from a subtraction push the decimal number to the next lower power of 2 and continue subtracting  but indicate a bit 0 below it to show you found a negative result</li>
+            <li>If the result is positive push the result of the subtraction to the next lower power of 2 to continue subtracting and indicate a bit 1. To show you found a positive result</li>
+            </ol>
+            <p>And you can see how the laws are implemented in the table below </p>
+           
+            <h4>Example :Convert 125<sub>10</sub>  to binary  </h4>          
+            <img src="example3.PNG" height="180px" alt="example3">
+            <p>After subtracting to zero read the results from left to right to obtain the binary equivalent of our decimal number.
+                So 
+                125<sub>10</sub>=01111101<sub>2</sub> you can ignore the first zero 1111101<sub>2</sub>
+                
+                <h3>Converting from binary back to decimal</h3>
+                This is as easy as eating chapati
+                To convert back to decimal utamultiply each bit (1 or 0) by 2 raised to the power of its corresponding index(placeholder) then sum up everything
+                
+                <h4>Example :Convert  1111101<sub>2</sub> to Decimal </h4>
+                
+                <p>We start counting the index from right to left starting from 0
+                       </p>
+                       <img src="example4.PNG" height="80px" alt="example4">
+        <p>So kuconvert utamultiply each binary bit by 2 raised to the bit’s corresponding index(placeholder) from right to left
+ 
+            <p>(1 x 20)+( 0 x 21 )+ (1 x 22) +( 1 x 23) + (1 x 24) + (1 x 25 )+ (1 x 26) =125<sub>10</sub></p>
+            
+            Kama kukula chapo sindio. With that you are now able to convert from decimal to binary and vice versa. Lets now move on to another flavor.
+             
+            <h3>Octal(of flavor 8)</h3>
+            <P>Things are about to get weirder but just roll with me by the end of this article utakuwa a binary magician.</P>
+            This number system represents numbers from 0-7 using 3 bits and since ni numbers nane pekee i.e (0,1,2,3,4,5,6,7)  we can even have its table </p>
+            <img src="example5.PNG" height="250px" alt="example4">
+            <p>Tutatumia hii table kama  reference point when we come to converting from octal to binary and vice verse.
+
+                <h3>Example :Convert the following Octal number to binary a)127<sub>8</sub> b)46<sub>8</sub> </h3>
+                
+                
+                In octal to binary conversion utareplace each octal number with its binary equivalent from table yetu pale juu then just join the binary bits(join not add usiconfuse)  or (this is for my learned friends )concatenate the bits.
+                
+                </p>
+                <img src="replace6.PNG" height="120px" alt="example4"><br>
+            
+                <img src="replace8.PNG" height="120px" alt="example4">
+                <p>Its so easy you can do it with your eyes closed</p>
+                <p>Converting from Binary to Octal
+                    Converting back to Octal from Binary utagroup the binary bits into 3’s from left to right and replace them with their octal equivalent kutoka kwa ile table yetu.
+                    Na kama umenotice its just the reverse of what we did when converting from octal to binary
+                    
+                    <h4>Example :Convert the following Binary number to Octal a)1010010110<sub>2</sub></h4>
+                    
+                    
+                    </p>
+                    <img src="replace7.PNG" height="130px" alt="example4">
+                    <p>Add zeros to the most significant bit ndio zikuwe 3 bits so as to get an octal equivalent. 
+                        Side Chat: Shika iyo table venye iko incase usahau tumia the 421 method kupata binary equivalents za hizo octal numbers.  
+                          
+                        <h4>Decimal to Octal</h4>
+                        Lets go back to when we were converting from Decimal to binary na ka unakumbuka we divided continuously by 2 till we got a zero divisor.
+                        You will notice that 2 is the flavor of binary.And octal being of flavor 8 ,You’ve guessed it right you smart-ass, to convert decimal to octal utadivide the number continuously by eight till you get a zero divisor
+                        The only difference is unlike in binary where we replaced the modulus (modulus is the fancy name for remainder) with a bit(1 or 0) here we write the actual modulus.
+                         
+                        <h4>Example : Convert the following Decimal numbers to Octal
+                            a)28<sub>10</sub>                            b)105<sub>10</sub></h4>
+                       
+                        </p>
+                        <img src="example9.PNG" height="360px" alt="example4">
+                        <h3>Octal to Decimal</h3>
+                            <p>Here we will also do what we did in the conversion from binary to decimal ama ushasahau unaeza rudi tu uangalie
+                             We multiplied each bit with 2(which is the flavor of Binary) raised to the power of its corresponding index(placeholder). </p>
+                            
+                            <p>Here we will also do the same but if we used binary’s flavor, yes Eintein you got it, we will also use octal’s flavor to multiply and convert decimal</p>
+                            
+                            <p>How about we use the examples in the decimal to octal conversion to see if they will bring us back to their decimal equivalent.Wouldn’t that be a magic trick </p>
+                            
+                            <h4>Example : Convert the following Octal to their Decimal equivalent 
+                            a)151<sub>8</sub>             b)34<sub>8</sub></h4> 
+                           
+                            <img src="example10.PNG" height="80px" alt="example4">
+                            <p>Just like we did in binary to decimal conversion,multiply each octal number with 8(octal’s flavour) raised to the power of its corresponding index(placeholder) from right to left then sum up everything</p>
+
+                                <p>(1 x 80) + (5 x 81) + (1 x 82)= 105<sub>10</sub>(well voila)</p>
+                                
+                                <p>Najua you will be more than overjoyed in joining me to do b) and see if it goes back to 2810</p>
+                                <img src="example11.PNG" height="90px"alt="example4">
+                                <p>(4x80)+(3x81)=28<sub>10</sub></p>
+                                   <p>Its so satisfactory ain’t it, unafeel mbaka kusmile ukizifanya.</p> 
+                                    
+                                    
+                                    <h4>Limitations of Octal </h4>
+                                    <p>Can only represent numbers from 0-7</p>
+                                    
+                                    
+                                    <h3>Hexadecimal of flavor 16</h3>
+                                   <p>Used to represent numbers from 0-15 using four bits(1’s and 0’s) </p> 
+                                     <p>Like octal, hexadecimal has its own table</p>
+                                     <img src="example12.PNG" height="450px" alt="example4">
+                                     <h4>Converting from Hexadecimal to Binary</h4>
+                                        <p>Just like we did in octal,utatumia the table above when converting from hexadecimal to binary and vice verse 
+                                        And just like in octal apa kazi ni kureplace tu the hexadecimal number with its binary equivalent </p>
+                                        
+                                        <h4>Example : Convert the following Hexadecimal numbers into Binary  a)47A<sub>16</sub>  b)F16<sub>16</sub></h4> 
+                                       
+                                       
+                                        <img src="example14.PNG" height="270px" alt="example4">
+                                        
+                                            
+                                            <h4>Converting From Binary to Hexadecimal</h4>
+                                                <p>By now ushanotice that kuna methods tnatumia kuconvert flavors znajirudia. To confirm that just like in octal, tutafanya the reverse of what we did in converting from hexadecimal to binary.</p>
+                                               <p> Difference pekee ni in hexadecimal we group decimals into four from right to left and replace each group with its hexadecimal equivalent</p>
+                                                
+                                               <h4>Example :Convert the following Binary to Hexadecimal a)100111011001<sub>2</sub></h4> 
+                                                
+                                                <img src="example15.PNG" height="140px"alt="example4">
+                        <p>Najua you are already feeling that A in this unit `
+
+                            <p>Next I show you how to convert from Hexadecimal to Decimal and vice verse.But if you are smart enough ushajua  trend and already have an idea of what is going to happen</p>
+                            
+                            <h4>Decimal to Hexadecimal</h4>
+                           <p>You already know it,just like we did in binary and octal,we are going to divide the decimal number continuously by what? Yes very nice hexadecimal’s flavor till we get a zero divisor.</p> 
+                            
+                            <p>And also just like in octal when we  divide we will write the modulus of the operations exactly venye iko</p>
+                           <p> Ready for another magic show? Well put on your costume and be my assistant on stage </p>
+                            
+                            <h4>Example :Convert the following Decimal numbers into Hexadecimal a)140<sub>10</sub>  b)425<sub>10</sub></h4>
+                            
+                            </p>
+                            <img src="example16.PNG" height="490px" alt="example4">
+                            <p>Now lets come to the most interesting part where we use the examples above to help us confirm whether what you are thinking is true</p>
+
+                                <h4>Example :Convert the following Hexadecimal numbers to Decimal a)8C<sub>16</sub> b)1A9<sub>16</sub></h4>
+                               
+                                Remember from our table that numbers from 10 to 15 are represented by A to F so saying C=12 is correct.Therefore when we draw our index(placeholder) table we will replace C with 12 to be able to multiply with hexadecimal’s flavor raised to the power of its index. </p>
+                                <img src="example17.PNG" height="70px"alt="example4"> 
+                                <p>(12x160)+(8x161)=140<sub>16</sub>(we got the rabbit out of the hat didn’t we)</p>
+                                    <p>And now just for fun’s sake</p>
+                                    <img src="example18.PNG"height="110px" alt="example4">
+                                    <p>(9x160)+(10x161)+(1x162)=425<sub>16</sub></p>
+
+                                       <p>Well there you have it you can now do computer number systems conversions </p>
+                                        
+
+
+
+                        
+                
+
+
+
+
+        
+
+
+    </body>
+</html>
